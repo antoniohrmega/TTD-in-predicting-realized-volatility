@@ -348,7 +348,7 @@ print(f"QLIKE: {ql_final_ph:.6f} ({ql_final_ph*100:.2f}%)")
 print(f"MAE: {mae_final_ph:.6f} ({mae_final_ph*100:.3f}%)")
 
 
-print("\n\nOPTIMAL HYPERPARAMETERS NBEATSx-PH (25% AMOSTRA, H=1):")
+print("\n\nOPTIMAL HYPERPARAMETERS NBEATSx-PH (25% sample, H=1):")
 print(f"input_size={best_ph['input_size']}, loss={best_ph['loss']}, scaler={best_ph['scaler_type']}, learning_rate={best_ph['learning_rate']}, stack_types=[identity,identity], n_blocks={best_ph['n_blocks']}, mlp_units={best_ph['mlp_units']}, windows_batch_size=60, num_lr_decays={best_ph['num_lr_decays']}, val_check_steps=100, n_harmonics={best_ph['n_harmonics']}, n_polynomials={best_ph['n_polynomials']}, max_steps={best_ph['epochs']}, random_seed={best_seed_ph['seed']}")
 
 
