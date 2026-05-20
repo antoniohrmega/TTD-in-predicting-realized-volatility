@@ -285,7 +285,7 @@ print(f"\nBest seed out of 20: {best_seed['seed']} (QLIKE={best_seed['QLIKE']:.6
 
 
 
-# --- MODELO FINAL: treino em 80%, teste em 20% ---
+# FINAL MODEL
 final_model = NBEATS(
     h=1,  # ou h=5 
     input_size=best["input_size"],
