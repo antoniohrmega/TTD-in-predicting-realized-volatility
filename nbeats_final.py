@@ -337,7 +337,7 @@ print(f"QLIKE: {ql_final:.6f} ({ql_final*100:.2f}%)")
 print(f"MAE: {mae_final:.6f} ({mae_final*100:.3f}%)")
 
 
-print("\n\nOPTIMAL HYPERPARAMETERS NBEATS (25% AMOSTRA, H=1):")
+print("\n\nOPTIMAL HYPERPARAMETERS NBEATS (25% sample, H=1):")
 print(f"input_size={best['input_size']}, loss={best['loss']}, scaler={best['scaler_type']}, learning_rate={best['learning_rate']}, stack_types=[identity,identity], n_blocks={best['n_blocks']}, mlp_units={best['mlp_units']}, windows_batch_size=60, num_lr_decays={best['num_lr_decays']}, val_check_steps={val_check_steps_param}, n_harmonics={best['n_harmonics']}, n_polynomials={best['n_polynomials']}, max_steps={best['epochs']}, random_seed={best_seed['seed']}")
 
 print(forecasts_final["ds"].min())
